@@ -8,6 +8,8 @@
 import Foundation
 
 enum Teams {
+	
+	/// All NHL teams
 	static let all: [String] = [
 		"ANA", // Anaheim Ducks
 		"ARI", // Arizona Coyotes

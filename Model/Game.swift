@@ -12,7 +12,6 @@ import SwiftUI
 @Model
 final class Game {
 	@Attribute(.unique) var id = UUID()
-
 	let homeTeam: String
 	let awayTeam: String
 

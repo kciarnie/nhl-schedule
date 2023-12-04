@@ -11,6 +11,8 @@
 		BB0522422B1BE3FB00A02C32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0522412B1BE3FB00A02C32 /* ContentView.swift */; };
 		BB0522462B1BE3FD00A02C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0522452B1BE3FD00A02C32 /* Assets.xcassets */; };
 		BB45DF7E2B1E6014002D0312 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45DF7D2B1E6014002D0312 /* Common.swift */; };
+		BB45DF812B1E76E6002D0312 /* GameResponse+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45DF802B1E76E6002D0312 /* GameResponse+Game.swift */; };
+		BB45DF832B1E77D5002D0312 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45DF822B1E77D5002D0312 /* ScheduleService.swift */; };
 		BB4AD3AD2B1D41CC00B14230 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AD3AC2B1D41CC00B14230 /* Settings.swift */; };
 		BB4AD3AF2B1D438A00B14230 /* SelectTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AD3AE2B1D438A00B14230 /* SelectTeamView.swift */; };
 		BB4D735E2B1D271200E87460 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BB94E5E02B1BEB5E00AFEDA6 /* test.json */; };
@@ -30,6 +32,8 @@
 		BB0522482B1BE3FD00A02C32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB05224A2B1BE3FD00A02C32 /* NHLSchedule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NHLSchedule.entitlements; sourceTree = "<group>"; };
 		BB45DF7D2B1E6014002D0312 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BB45DF802B1E76E6002D0312 /* GameResponse+Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameResponse+Game.swift"; path = "../../../../.Trash/nhl-schedule.bak/Common/GameResponse+Game.swift"; sourceTree = "<group>"; };
+		BB45DF822B1E77D5002D0312 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleService.swift; path = "../../../../.Trash/nhl-schedule.bak/API/ScheduleService.swift"; sourceTree = "<group>"; };
 		BB4AD3AC2B1D41CC00B14230 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BB4AD3AE2B1D438A00B14230 /* SelectTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamView.swift; sourceTree = "<group>"; };
 		BB4D73622B1D281A00E87460 /* TestContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContentViewModel.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			children = (
 				BBE059142B1CE60C009F54CB /* API */,
 				BB45DF7C2B1E6004002D0312 /* Common */,
+				BB45DF7F2B1E76CF002D0312 /* Mapping */,
 				BBE059132B1CE602009F54CB /* Model */,
 				BB0522472B1BE3FD00A02C32 /* Preview Content */,
 				BBE059152B1CE616009F54CB /* View */,
@@ -89,15 +94,23 @@
 			isa = PBXGroup;
 			children = (
 				BB45DF7D2B1E6014002D0312 /* Common.swift */,
+				BB4AD3AC2B1D41CC00B14230 /* Settings.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BB45DF7F2B1E76CF002D0312 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				BB45DF802B1E76E6002D0312 /* GameResponse+Game.swift */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		BBE059132B1CE602009F54CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BB94E5E22B1BEFB900AFEDA6 /* Game.swift */,
-				BB4AD3AC2B1D41CC00B14230 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BB94E5DE2B1BE8F600AFEDA6 /* ScheduleResponse.swift */,
+				BB45DF822B1E77D5002D0312 /* ScheduleService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -197,7 +211,9 @@
 				BB4D73632B1D281A00E87460 /* TestContentViewModel.swift in Sources */,
 				BB4AD3AF2B1D438A00B14230 /* SelectTeamView.swift in Sources */,
 				BB4D73612B1D274800E87460 /* Previews+URL.swift in Sources */,
+				BB45DF832B1E77D5002D0312 /* ScheduleService.swift in Sources */,
 				BB94E5E32B1BEFB900AFEDA6 /* Game.swift in Sources */,
+				BB45DF812B1E76E6002D0312 /* GameResponse+Game.swift in Sources */,
 				BBE059122B1CE3F1009F54CB /* ContentViewModel.swift in Sources */,
 				BB45DF7E2B1E6014002D0312 /* Common.swift in Sources */,
 				BB0522402B1BE3FB00A02C32 /* NHLScheduleApp.swift in Sources */,

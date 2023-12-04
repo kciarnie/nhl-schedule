@@ -18,6 +18,8 @@ protocol ContentViewModelProtocol {
 
 	var games: [Game] = []
 
+	let service = ScheduleService.shared
+	
 	init() {
 		Task {
 			try await load()
@@ -33,14 +35,8 @@ protocol ContentViewModelProtocol {
 			throw APIError.teamNotSet
 		}
 
-		guard let url = URL(string: "https://api-web.nhle.com/v1/club-schedule/\(Settings.shared.myTeam)/month/now") else {
-			throw APIError.invalidURL
-		}
-
 		do {
-			let (data, _) = try await URLSession.shared.data(from: url)
-			let decoder = JSONDecoder()
-			let schedule = try decoder.decode(ScheduleResponse.self, from: data)
+			let schedule = try await service.fetchSchedule(for: Settings.shared.myTeam)
 			self.schedule = schedule
 			games = schedule.games.map { $0.convert() }
 		} catch {
@@ -55,18 +51,4 @@ enum APIError: Error {
 	case invalidResponse
 	case decodingError(Error)
 	case teamNotSet
-}
-
-extension ScheduleResponse.GameResponse {
-	func convert() -> Game {
-		Game(
-			homeTeam: homeTeam.abbrev,
-			awayTeam: awayTeam.abbrev,
-			startDate: gameDate,
-			homeTeamLogo: homeTeam.logo,
-			awayTeamLogo: awayTeam.logo,
-			startTimeUTC: startTimeUTC,
-			gameCenterLink: gameCenterLink
-		)
-	}
 }
