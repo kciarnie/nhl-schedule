@@ -30,6 +30,8 @@ struct TeamItemView: View {
 	
 	let size: CGFloat = 50
 	
+	@Environment(MonthContentViewModel.self) private var viewModel
+	
 	@Environment(\.dismiss) var dismiss
 	
 	var body: some View {
@@ -42,6 +44,9 @@ struct TeamItemView: View {
 			.clipShape(Circle())
 			.onTapGesture {
 				Settings.shared.myTeam = team.uppercased()
+				Task {
+					try await viewModel.load()
+				}
 				dismiss()
 			}
 	}
