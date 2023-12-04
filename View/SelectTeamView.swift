@@ -1,16 +1,15 @@
 //
 //  SelectTeamView.swift
-//  NHLSchedule
+//  NHL Schedule
 //
-//  Created by Kevin Ciarniello on 04.12.23.
+//  Copyright © 2023 Kevin Ciarniello. All rights reserved.
 //
 
 import SwiftUI
 
 struct SelectTeamView: View {
-	
 	@Environment(MonthContentViewModel.self) private var viewModel
-	
+
 	let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5)
 
 	var body: some View {
@@ -22,18 +21,19 @@ struct SelectTeamView: View {
 			}
 			.padding()
 		}
+		.frame(width: 420, height: 650)
 	}
 }
 
 struct TeamItemView: View {
 	let team: String
-	
+
 	let size: CGFloat = 50
-	
+
 	@Environment(MonthContentViewModel.self) private var viewModel
-	
+
 	@Environment(\.dismiss) var dismiss
-	
+
 	var body: some View {
 		Image(team, bundle: .main)
 			.resizable()

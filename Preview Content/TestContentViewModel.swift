@@ -1,8 +1,8 @@
 //
 //  TestContentViewModel.swift
-//  NHLSchedule
+//  NHL Schedule
 //
-//  Created by Kevin Ciarniello on 03.12.23.
+//  Copyright © 2023 Kevin Ciarniello. All rights reserved.
 //
 
 import Foundation

@@ -24,7 +24,6 @@ final class Game {
 
 	let gameCenterLink: String?
 
-
 	init(homeTeam: String, awayTeam: String, startDate: String, homeTeamLogo: String, awayTeamLogo: String, startTimeUTC: String, gameCenterLink: String?) {
 		self.homeTeam = homeTeam
 		self.awayTeam = awayTeam

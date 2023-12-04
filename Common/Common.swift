@@ -1,14 +1,13 @@
 //
 //  Common.swift
-//  NHLSchedule
+//  NHL Schedule
 //
-//  Created by Kevin Ciarniello on 04.12.23.
+//  Copyright © 2023 Kevin Ciarniello. All rights reserved.
 //
 
 import Foundation
 
 enum Teams {
-
 	static let all: [String] = [
 		"ANA", // Anaheim Ducks
 		"ARI", // Arizona Coyotes
@@ -41,6 +40,6 @@ enum Teams {
 		"VAN", // Vancouver Canucks
 		"VGK", // Vegas Golden Knights
 		"WSH", // Washington Capitals
-		"WPG"  // Winnipeg Jets
+		"WPG" // Winnipeg Jets
 	]
 }

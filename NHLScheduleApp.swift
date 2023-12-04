@@ -10,7 +10,6 @@ import SwiftUI
 
 @main
 struct NHLScheduleApp: App {
-
 	var sharedModelContainer: ModelContainer = {
 		let schema = Schema([
 			Game.self
@@ -35,7 +34,7 @@ struct NHLScheduleApp: App {
 			Image(.menubarIcon)
 		}
 		.menuBarExtraStyle(.menu)
-		
+
 		Window("Select your team", id: "select-team") {
 			SelectTeamView()
 				.environment(viewModel)

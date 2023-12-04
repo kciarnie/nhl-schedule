@@ -15,9 +15,9 @@ protocol ContentViewModelProtocol {
 
 @Observable final class MonthContentViewModel {
 	var schedule: ScheduleResponse?
-	
+
 	var games: [Game] = []
-	
+
 	init() {
 		Task {
 			try await load()
@@ -32,11 +32,11 @@ protocol ContentViewModelProtocol {
 		guard !Settings.shared.myTeam.isEmpty else {
 			throw APIError.teamNotSet
 		}
-		
+
 		guard let url = URL(string: "https://api-web.nhle.com/v1/club-schedule/\(Settings.shared.myTeam)/month/now") else {
 			throw APIError.invalidURL
 		}
-		
+
 		do {
 			let (data, _) = try await URLSession.shared.data(from: url)
 			let decoder = JSONDecoder()
