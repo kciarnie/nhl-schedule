@@ -33,7 +33,7 @@ protocol ContentViewModelProtocol {
 			throw APIError.teamNotSet
 		}
 		
-		guard let url = URL(string: "https://api-web.nhle.com/v1/club-schedule/VAN/month/now") else {
+		guard let url = URL(string: "https://api-web.nhle.com/v1/club-schedule/\(Settings.shared.myTeam)/month/now") else {
 			throw APIError.invalidURL
 		}
 		
