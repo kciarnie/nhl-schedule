@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0522402B1BE3FB00A02C32 /* NHLScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05223F2B1BE3FB00A02C32 /* NHLScheduleApp.swift */; };
+		BB0522422B1BE3FB00A02C32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0522412B1BE3FB00A02C32 /* ContentView.swift */; };
+		BB0522462B1BE3FD00A02C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0522452B1BE3FD00A02C32 /* Assets.xcassets */; };
+		BB45DF7E2B1E6014002D0312 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45DF7D2B1E6014002D0312 /* Common.swift */; };
+		BB4AD3AD2B1D41CC00B14230 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AD3AC2B1D41CC00B14230 /* Settings.swift */; };
+		BB4AD3AF2B1D438A00B14230 /* SelectTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AD3AE2B1D438A00B14230 /* SelectTeamView.swift */; };
+		BB4D735E2B1D271200E87460 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BB94E5E02B1BEB5E00AFEDA6 /* test.json */; };
+		BB4D73602B1D271200E87460 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0522482B1BE3FD00A02C32 /* Preview Assets.xcassets */; };
+		BB4D73612B1D274800E87460 /* Previews+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE0590F2B1CB635009F54CB /* Previews+URL.swift */; };
+		BB4D73632B1D281A00E87460 /* TestContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D73622B1D281A00E87460 /* TestContentViewModel.swift */; };
+		BB94E5DF2B1BE8F600AFEDA6 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94E5DE2B1BE8F600AFEDA6 /* ScheduleResponse.swift */; };
+		BB94E5E32B1BEFB900AFEDA6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94E5E22B1BEFB900AFEDA6 /* Game.swift */; };
+		BBE059122B1CE3F1009F54CB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE059112B1CE3F1009F54CB /* ContentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB05223C2B1BE3FB00A02C32 /* NHLSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHLSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB05223F2B1BE3FB00A02C32 /* NHLScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLScheduleApp.swift; sourceTree = "<group>"; };
+		BB0522412B1BE3FB00A02C32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0522452B1BE3FD00A02C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0522482B1BE3FD00A02C32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB05224A2B1BE3FD00A02C32 /* NHLSchedule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NHLSchedule.entitlements; sourceTree = "<group>"; };
+		BB45DF7D2B1E6014002D0312 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BB4AD3AC2B1D41CC00B14230 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BB4AD3AE2B1D438A00B14230 /* SelectTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamView.swift; sourceTree = "<group>"; };
+		BB4D73622B1D281A00E87460 /* TestContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContentViewModel.swift; sourceTree = "<group>"; };
+		BB94E5DE2B1BE8F600AFEDA6 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
+		BB94E5E02B1BEB5E00AFEDA6 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		BB94E5E22B1BEFB900AFEDA6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		BBE0590F2B1CB635009F54CB /* Previews+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Previews+URL.swift"; sourceTree = "<group>"; };
+		BBE059112B1CE3F1009F54CB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0522392B1BE3FB00A02C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0522332B1BE3FB00A02C32 = {
+			isa = PBXGroup;
+			children = (
+				BBE059142B1CE60C009F54CB /* API */,
+				BB45DF7C2B1E6004002D0312 /* Common */,
+				BBE059132B1CE602009F54CB /* Model */,
+				BB0522472B1BE3FD00A02C32 /* Preview Content */,
+				BBE059152B1CE616009F54CB /* View */,
+				BB05223F2B1BE3FB00A02C32 /* NHLScheduleApp.swift */,
+				BB0522452B1BE3FD00A02C32 /* Assets.xcassets */,
+				BB05224A2B1BE3FD00A02C32 /* NHLSchedule.entitlements */,
+				BB05223D2B1BE3FB00A02C32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB05223D2B1BE3FB00A02C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB05223C2B1BE3FB00A02C32 /* NHLSchedule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB0522472B1BE3FD00A02C32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB0522482B1BE3FD00A02C32 /* Preview Assets.xcassets */,
+				BB94E5E02B1BEB5E00AFEDA6 /* test.json */,
+				BBE0590F2B1CB635009F54CB /* Previews+URL.swift */,
+				BB4D73622B1D281A00E87460 /* TestContentViewModel.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB45DF7C2B1E6004002D0312 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB45DF7D2B1E6014002D0312 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BBE059132B1CE602009F54CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB94E5E22B1BEFB900AFEDA6 /* Game.swift */,
+				BB4AD3AC2B1D41CC00B14230 /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBE059142B1CE60C009F54CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BB94E5DE2B1BE8F600AFEDA6 /* ScheduleResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BBE059152B1CE616009F54CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB0522412B1BE3FB00A02C32 /* ContentView.swift */,
+				BBE059112B1CE3F1009F54CB /* ContentViewModel.swift */,
+				BB4AD3AE2B1D438A00B14230 /* SelectTeamView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB05223B2B1BE3FB00A02C32 /* NHLSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB05224D2B1BE3FD00A02C32 /* Build configuration list for PBXNativeTarget "NHLSchedule" */;
+			buildPhases = (
+				BB0522382B1BE3FB00A02C32 /* Sources */,
+				BB0522392B1BE3FB00A02C32 /* Frameworks */,
+				BB05223A2B1BE3FB00A02C32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHLSchedule;
+			productName = NHLSchedule;
+			productReference = BB05223C2B1BE3FB00A02C32 /* NHLSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0522342B1BE3FB00A02C32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					BB05223B2B1BE3FB00A02C32 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = BB0522372B1BE3FB00A02C32 /* Build configuration list for PBXProject "NHLSchedule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB0522332B1BE3FB00A02C32;
+			productRefGroup = BB05223D2B1BE3FB00A02C32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB05223B2B1BE3FB00A02C32 /* NHLSchedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB05223A2B1BE3FB00A02C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0522462B1BE3FD00A02C32 /* Assets.xcassets in Resources */,
+				BB4D73602B1D271200E87460 /* Preview Assets.xcassets in Resources */,
+				BB4D735E2B1D271200E87460 /* test.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0522382B1BE3FB00A02C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0522422B1BE3FB00A02C32 /* ContentView.swift in Sources */,
+				BB94E5DF2B1BE8F600AFEDA6 /* ScheduleResponse.swift in Sources */,
+				BB4AD3AD2B1D41CC00B14230 /* Settings.swift in Sources */,
+				BB4D73632B1D281A00E87460 /* TestContentViewModel.swift in Sources */,
+				BB4AD3AF2B1D438A00B14230 /* SelectTeamView.swift in Sources */,
+				BB4D73612B1D274800E87460 /* Previews+URL.swift in Sources */,
+				BB94E5E32B1BEFB900AFEDA6 /* Game.swift in Sources */,
+				BBE059122B1CE3F1009F54CB /* ContentViewModel.swift in Sources */,
+				BB45DF7E2B1E6014002D0312 /* Common.swift in Sources */,
+				BB0522402B1BE3FB00A02C32 /* NHLScheduleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB05224B2B1BE3FD00A02C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB05224C2B1BE3FD00A02C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BB05224E2B1BE3FD00A02C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NHLSchedule.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				DEVELOPMENT_TEAM = 97SC954L6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kciarnie.nhlschedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB05224F2B1BE3FD00A02C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NHLSchedule.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				DEVELOPMENT_TEAM = 97SC954L6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kciarnie.nhlschedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0522372B1BE3FB00A02C32 /* Build configuration list for PBXProject "NHLSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB05224B2B1BE3FD00A02C32 /* Debug */,
+				BB05224C2B1BE3FD00A02C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB05224D2B1BE3FD00A02C32 /* Build configuration list for PBXNativeTarget "NHLSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB05224E2B1BE3FD00A02C32 /* Debug */,
+				BB05224F2B1BE3FD00A02C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0522342B1BE3FB00A02C32 /* Project object */;
+}

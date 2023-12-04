@@ -1,0 +1,32 @@
+#Version
+--minversion 0.52.4
+
+# File Header
+--header "\n {file}\n NHL Schedule\n\n Copyright © {year} Kevin Ciarniello. All rights reserved.\n"
+
+# format options
+--allman false
+--indent tab
+--enable elseOnSameLine,redundantType,redundantVoidReturnType
+--disable trailingCommas,organizeDeclarations,wrapMultilineStatementBraces
+--commas always
+--comments indent
+--self remove
+# --semicolons never
+--semicolons inline
+--trimwhitespace always
+--wraparguments preserve
+--wrapcollections preserve
+
+# rules
+--enable isEmpty
+--enable anyObjectProtocol  
+--enable assertionFailures
+--enable blankLinesAroundMark
+--enable blankLinesAtEndOfScope, blankLinesBetweenImports, blankLinesBetweenScopes
+--enable blockComments
+--enable duplicateImports
+--extensionacl on-extension
+
+# Added isEmpty because it's removed by default, please use swiftformat --rules to see which are deprecated
+# As most are enabled by default
