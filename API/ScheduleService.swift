@@ -1,8 +1,8 @@
 //
 //  ScheduleService.swift
-//  NHLSchedule
+//  NHL Schedule
 //
-//  Created by Kevin Ciarniello on 04.12.23.
+//  Copyright © 2023 Kevin Ciarniello. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ struct ScheduleService {
 	static let shared = ScheduleService()
 
 	private init() {}
-	
+
 	/// Fetches the schedule for a given team
 	/// - Parameter team: the team's abbreviation
 	/// - Returns: the schedule

@@ -19,7 +19,7 @@ protocol ContentViewModelProtocol {
 	var games: [Game] = []
 
 	let service = ScheduleService.shared
-	
+
 	init() {
 		Task {
 			try await load()
