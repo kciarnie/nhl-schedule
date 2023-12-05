@@ -16,7 +16,7 @@ The NHL Schedule App allows you to view the monthly schedule for any NHL team. C
 
 ## How to Use
 
-1. Download and install the NHL Schedule App.
+1. Download the NHL Schedule App repository.
 2. Launch the app.
 3. Select your favorite team from the team list.
 4. The app will display the monthly schedule for the chosen team.
@@ -24,7 +24,7 @@ The NHL Schedule App allows you to view the monthly schedule for any NHL team. C
 
 ## Requirements
 
-- **macOS:** 11.0 or later
+- **macOS:** 13.0 or later
 
 ## Installation
 
